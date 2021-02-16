@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using Modbus.Device;
 using System.IO.Ports;
 using System.IO;
 using System.Linq;
-
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsFormsApp1
 {
@@ -25,6 +30,8 @@ namespace WindowsFormsApp1
             {
                 string[] ports = SerialPort.GetPortNames();
                 comboBox1.Items.AddRange(ports);
+
+
             }
             catch (Exception ex)
             {
